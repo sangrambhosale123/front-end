@@ -1,0 +1,33 @@
+<html>
+    <head>
+     <title>Login page</title>
+     <style>
+         #div1
+         {
+             margin-left: 550px;
+             margin-right: 550px;
+             padding: 50px;
+             border: solid black 15px;
+             text-align: center;
+            
+         }
+     </style>
+    </head>
+    
+    <body>
+        <header>
+            <h1 style="text-align: center; margin-top: 100px;"> Login Form</h1>
+        </header>
+        
+        <div id="div1">
+            <div *ngIf="hasLoginFailed" class="alert alert-danger">  {{message}} </div>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+         <b>Username:</b>   <input type="text" [(ngModel)]="user.p_username" name="p_username" required><br><br>
+         <b>password:</b>   <input type="password" [(ngModel)]="user.p_password" name="p_password" required><br><br>
+        <input type="submit" value="Login">
+        <input type="reset" value="clear"><br><br>
+        <a routerLink='/home'>Back to Home page</a>
+        </form>
+        </div>
+    </body>
+</html>

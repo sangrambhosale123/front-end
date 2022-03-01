@@ -1,0 +1,45 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Appointment Table </title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="main-content">
+		<div class="container">
+			<h1>Appoinment List</h1>
+			<br>
+
+			<table class="table table-bordered">
+				<thead class="thead">
+					<tr>
+						<th>ap_id</th>
+						<th>ap_date</th>
+						<th>ap_time</th>
+						<th>city</th>
+						<th>gender</th>
+                        <th>p_name</th>
+                        <th>symptoms</th>
+                        <th>action</th>
+					</tr>
+				</thead>
+                <tbody class="tbody">
+                    <tr *ngFor="let appoinment of appoinmentlist">
+                        <td>{{appoinment.ap_id}}</td>
+                        <td>{{appoinment.ap_date}}</td>
+                        <td>{{appoinment.ap_time}}</td>
+                        <td>{{appoinment.city}}</td>
+                        <td>{{appoinment.gender}}</td>
+                        <td>{{appoinment.p_name}}</td>
+                        <td>{{appoinment.symptoms}}</td>
+                        <td> <button type="button" class="btn btn-danger" (click)="deleteappoinment(appoinment)">Delete</button></td>
+                    </tr>
+                        
+
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>

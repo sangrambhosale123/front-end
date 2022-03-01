@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.background {
+  width: 100%;
+  height: 80%;
+  background: url("https://media.istockphoto.com/photos/festival-event-party-with-hipster-people-blurred-background-picture-id613897214?k=20&m=613897214&s=612x612&w=0&h=zRWZF265BWzunfVwI5kCOBIvZSiFyVP_l7a91JGwLNo=");
+
+  background-size: cover;
+}
+
+h1 {
+  background-image: url("https://media.istockphoto.com/photos/close-up-of-doctor-is-touching-digital-virtual-screen-for-analytics-picture-id1273886962?b=1&k=20&m=1273886962&s=170667a&w=0&h=f9FyAVFdXEwAv7qdEFWbdfLoqa7z87rwyKsd9iqrjBw=");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+mat-sidenav {
+  background-color: #6a81f1;
+}
